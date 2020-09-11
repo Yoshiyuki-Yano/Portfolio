@@ -9,33 +9,22 @@
   const contact = document.getElementById('overlay-contact');
   const twitter = document.getElementById('overlay-twitter');
   const instagram = document.getElementById('overlay-instagram');
-  
+
+  function overlayClose(link) {
+    link.addEventListener('click', () => {
+      overlay.classList.remove('show');
+      open.classList.remove('hide');
+    }); 
+  };
   open.addEventListener('click', () => {
     overlay.classList.add('show');
     open.classList.add('hide');
   });
-  close.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
-  about.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
-  works.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
-  contact.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
-  twitter.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
-  instagram.addEventListener('click', () => {
-    overlay.classList.remove('show');
-    open.classList.remove('hide');
-  });
+
+  overlayClose(close);
+  overlayClose(about);
+  overlayClose(works);
+  overlayClose(contact);
+  overlayClose(twitter);
+  overlayClose(instagram);
 }
