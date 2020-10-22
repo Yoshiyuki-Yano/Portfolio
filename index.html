@@ -34,7 +34,7 @@
   <!-- ここまでヘッダー -->
 
   <!-- ハンバーガーメニュー -->
-  <div class="overlay">
+  <div class="overlay" id="mask">
     <span class="material-icons" id="close">close</span>
     <nav>
       <ul>
@@ -84,11 +84,11 @@
     <h1 class="about-title">ABOUT</h1>
       <div class="about-contents">
         <div class="about-img">
-          <img src="images/D7145D50-63B3-4E3E-BA3A-39F655046841_1_201_a.jpeg" alt="プロフィール画像です" width="200px" height="auto">
+          <img src="images/IMG_4711 2.jpeg" alt="プロフィール画像です" width="200px" height="auto">
         </div>
         <div class="about-text">
           <p class="about-name">Yoshiyuki Yano | Web Engineer</p>
-          <p class="about-read">カフェで培ったコミュニケーションスキルを活かし、お客様の言葉の奥に隠れた本当のニーズに寄り添えるエンジニアです。誰もが素晴らしい理想を持っていますが形にならなければ伝えることができません。それを伝える手助けをするのがエンジニアだと思っています。世の中の人が人にしかできないことに集中できるようになれば世界がより良くなると確信しています。</p>
+          <p class="about-read">カフェで培ったコミュニケーションスキルを活かし、お客様の言葉の奥に隠れた本当の気持ちに寄り添えるエンジニアです。誰もが素晴らしい理想を持っていますが形にならなければ伝えることができません。それを伝える手助けをするのがエンジニアだと思っています。世の中の人が、「人」にしかできないことに集中できるようになれば世界がより良くなると確信しています。</p>
         </div>
         <div class="about-bottom-bg"></div>
       </div>
@@ -100,60 +100,16 @@
     <h1 class="works-title">WORKS</h1>
     <div class="works-contents">
       <div class="works-item-bg">
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu1.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu2.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu3.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu4.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu5.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu6.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu7.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu8.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
-        <div class="works-item">
-          <a href="#">
-            <img src="images/menu9.jpg">
-            <p>イメージ写真</p>
-          </a>
-        </div>
+        <a href="#" class="item1"><div><p>item1</p></div></a>
+        <a href="#" class="item2"><div><p>item2</p></div></a>
+        <a href="#" class="item3"><div><p>item3</p></div></a>
+        <a href="#" class="item4"><div><p>item4</p></div></a>
+        <a href="#" class="item5"><div><p>item5</p></div></a>
+        <a href="#" class="item6"><div><p>item6</p></div></a>
+        <a href="#" class="item7"><div><p>item7</p></div></a>
+        <a href="#" class="item8"><div><p>item8</p></div></a>
+        <a href="#" class="item9"><div><p>item9</p></div></a>
+        <a href="#" class="more-nav"><div><nobr>MORE <i class="fas fa-angle-double-right"></i></nobr></div></a>
       </div>
     </div>
   </section>
@@ -174,7 +130,7 @@
           
           <div>
             <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="entry.1455289380" placeholder="example@mail.co.jp" required>
+            <input type="email" id="email" name="entry.1455289380" placeholder="example@email.com" required>
           </div>
           
           <div>
@@ -185,6 +141,8 @@
           <div class="btn-position">
             <input type="submit" class="button" value="送信">
           </div>
+
+          <P class="form-info">このフォームはGoogle フォームを使用しています。</P>
        </form>
       </div>
     </div>
