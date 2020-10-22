@@ -4,6 +4,7 @@
   const open = document.getElementById('open');
   const overlay = document.querySelector('.overlay');
   const close = document.getElementById('close');
+  const mask = document.getElementById('mask');
   const about = document.getElementById('overlay-about');
   const works = document.getElementById('overlay-works');
   const contact = document.getElementById('overlay-contact');
@@ -22,6 +23,7 @@
   });
 
   overlayClose(close);
+  overlayClose(mask);
   overlayClose(about);
   overlayClose(works);
   overlayClose(contact);
